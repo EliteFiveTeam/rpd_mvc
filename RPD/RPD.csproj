@@ -34,6 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,17 +52,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AnalisysWordController.cs" />
     <Compile Include="Controller\MainController.cs" />
     <Compile Include="Data\DatabaseHelper.cs" />
     <Compile Include="Data\DataRepository.cs" />
     <Compile Include="Data\Model\Discipline.cs" />
     <Compile Include="Data\Model\EducationalProfile.cs" />
+    <Compile Include="Data\Model\Knowledge.cs" />
+    <Compile Include="Data\Model\ParametersDiscipline.cs" />
+    <Compile Include="Data\Model\Themes.cs" />
     <Compile Include="View\AnalysisExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\AnalysisExcelForm.Designer.cs">
       <DependentUpon>AnalysisExcelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\AnalysisWordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnalysisWordForm.Designer.cs">
+      <DependentUpon>AnalysisWordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\IAnalysisWordForm.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +85,9 @@
     <Compile Include="View\IMainForm.cs" />
     <EmbeddedResource Include="View\AnalysisExcelForm.resx">
       <DependentUpon>AnalysisExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnalysisWordForm.resx">
+      <DependentUpon>AnalysisWordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -91,7 +111,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -6,3 +6,12 @@ C:\Users\M1KE\documents\visual studio 2010\Projects\RPD\RPD\bin\Debug\RPD.pdb
 C:\Users\M1KE\documents\visual studio 2010\Projects\RPD\RPD\obj\x86\Debug\RPD.exe
 C:\Users\M1KE\documents\visual studio 2010\Projects\RPD\RPD\obj\x86\Debug\RPD.pdb
 C:\Users\M1KE\documents\visual studio 2010\Projects\RPD\RPD\obj\x86\Debug\RPD.View.AnalysisExcelForm.resources
+C:\Users\Norplay\Desktop\rpd_mvc\RPD\obj\x86\Debug\RPD.exe
+C:\Users\Norplay\Desktop\rpd_mvc\RPD\obj\x86\Debug\RPD.pdb
+C:\Users\Norplay\Desktop\rpd_mvc\RPD\bin\Debug\RPD.exe
+C:\Users\Norplay\Desktop\rpd_mvc\RPD\bin\Debug\RPD.pdb
+C:\Users\Norplay\Desktop\rpd_mvc\RPD\obj\x86\Debug\RPD.View.AnalysisExcelForm.resources
+C:\Users\Norplay\Desktop\rpd_mvc\RPD\obj\x86\Debug\RPD.View.AnalysisWordForm.resources
+C:\Users\Norplay\Desktop\rpd_mvc\RPD\obj\x86\Debug\RPD.View.Form1.resources
+C:\Users\Norplay\Desktop\rpd_mvc\RPD\obj\x86\Debug\RPD.Properties.Resources.resources
+C:\Users\Norplay\Desktop\rpd_mvc\RPD\obj\x86\Debug\RPD.csproj.GenerateResource.Cache

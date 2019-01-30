@@ -46,24 +46,26 @@
             this.tableLayoutPanel1.Controls.Add(this.buttonSelectExcel, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(801, 467);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(601, 379);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(801, 467);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(602, 384);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // rtbLogs
             // 
             this.rtbLogs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbLogs.Location = new System.Drawing.Point(8, 8);
-            this.rtbLogs.Margin = new System.Windows.Forms.Padding(8);
+            this.rtbLogs.Location = new System.Drawing.Point(6, 6);
+            this.rtbLogs.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rtbLogs.Name = "rtbLogs";
-            this.rtbLogs.Size = new System.Drawing.Size(588, 370);
+            this.rtbLogs.Size = new System.Drawing.Size(442, 306);
             this.rtbLogs.TabIndex = 0;
             this.rtbLogs.Text = "";
             // 
@@ -72,10 +74,10 @@
             this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar.Location = new System.Drawing.Point(8, 394);
-            this.progressBar.Margin = new System.Windows.Forms.Padding(8);
+            this.progressBar.Location = new System.Drawing.Point(6, 324);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(588, 65);
+            this.progressBar.Size = new System.Drawing.Size(442, 54);
             this.progressBar.TabIndex = 1;
             // 
             // buttonSelectExcel
@@ -85,21 +87,22 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSelectExcel.BackColor = System.Drawing.Color.LightGray;
             this.buttonSelectExcel.Font = new System.Drawing.Font("Arial Narrow", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSelectExcel.Location = new System.Drawing.Point(612, 394);
-            this.buttonSelectExcel.Margin = new System.Windows.Forms.Padding(8);
+            this.buttonSelectExcel.Location = new System.Drawing.Point(460, 324);
+            this.buttonSelectExcel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.buttonSelectExcel.Name = "buttonSelectExcel";
-            this.buttonSelectExcel.Size = new System.Drawing.Size(181, 65);
+            this.buttonSelectExcel.Size = new System.Drawing.Size(136, 54);
             this.buttonSelectExcel.TabIndex = 2;
             this.buttonSelectExcel.Text = "Выберите \"Учебный план\"";
             this.buttonSelectExcel.UseVisualStyleBackColor = false;
             // 
             // AnalysisExcelForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(801, 467);
+            this.ClientSize = new System.Drawing.Size(602, 384);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.MinimumSize = new System.Drawing.Size(819, 512);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(618, 423);
             this.Name = "AnalysisExcelForm";
             this.Text = "Анализ учебных планов";
             this.tableLayoutPanel1.ResumeLayout(false);
