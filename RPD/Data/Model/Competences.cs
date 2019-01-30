@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RPD.Data.Model
 {
-    class Competences
+    public class Competences
     {
         public String Name { get; set; }
         public List<string> PreDiscipline { get; set; } // Дисц ДО

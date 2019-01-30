@@ -5,9 +5,9 @@ using System.Text;
 
 namespace RPD.Data.Model
 {
-    class PlanEducational
+    public class PlanEducational
     {
         public List<Discipline> disciplines;
-        public List<Competences> competences;
+      
     }
 }

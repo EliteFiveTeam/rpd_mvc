@@ -24,9 +24,12 @@ namespace RPD.Data.Model
         public int StartDis; // Начало дисциплины
         public int EndDis; // Конец дисциплины
         public string Kafedra; // Наименование кафедры
+        public Dictionary<int, Semester> semesters;
+        public List<Competences> competences;
 
         public Discipline()
         {
+     
         }
 
         public Discipline(String name)
