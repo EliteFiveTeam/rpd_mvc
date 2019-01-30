@@ -36,9 +36,9 @@ namespace RPD.View
         }
 
 
-        public void ShowProfiles(List<EducationalProfile> profiles)
+        public void ShowProfiles(List<ProfileEducational> profiles)
         {
-            foreach (EducationalProfile profile in profiles)
+            foreach (ProfileEducational profile in profiles)
             {
                 listBoxProfile.Items.Add(profile.GetFullName());
             }

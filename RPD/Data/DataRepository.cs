@@ -30,21 +30,21 @@ namespace RPD.Data
             db = new DatabaseHelper();
         }
 
-        public List<EducationalProfile> GetProfileNameAndYear(){
-            List<EducationalProfile> list = new List<EducationalProfile>();
+        public List<ProfileEducational> GetProfileNameAndYear(){
+            List<ProfileEducational> list = new List<ProfileEducational>();
             OleDbDataReader reader = db.GetReader("SELECT * FROM Профиль ;");
             while(reader.Read())
             {
-                list.Add(new EducationalProfile(reader["Название_профиля"].ToString(), reader["Год_профиля"].ToString()));
+                list.Add(new ProfileEducational(reader["Название_профиля"].ToString(), reader["Год_профиля"].ToString()));
             }
             reader.Close();
             return list;
         }
 
-           public List<Discipline> GetDiscipline(EducationalProfile profile){
+           public List<Discipline> GetDiscipline(ProfileEducational profile){
             List<Discipline> list = new List<Discipline>();
             int id = -1;
-            OleDbDataReader reader = db.GetReader("SELECT Профиль.Название_профиля, Профиль.Год_профиля,Профиль.Код FROM Профиль WHERE (((Профиль.Название_профиля)='" + profile.NameProfile + "') AND ((Профиль.Год_профиля)='" + profile.YearProfile + "'));");
+            OleDbDataReader reader = db.GetReader("SELECT Профиль.Название_профиля, Профиль.Год_профиля,Профиль.Код FROM Профиль WHERE (((Профиль.Название_профиля)='" + profile.Name + "') AND ((Профиль.Год_профиля)='" + profile.Year + "'));");
             while(reader.Read())
             {
                 id = Convert.ToInt32(reader["Код"]);

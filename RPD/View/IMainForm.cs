@@ -6,7 +6,7 @@ namespace RPD.View
 {
     public interface IMainForm
     {
-        void ShowProfiles(List<EducationalProfile> profiles);
+        void ShowProfiles(List<ProfileEducational> profiles);
         void ShowDisciplines(List<Discipline> disciplines);
         void SetController(MainController controller);
     }

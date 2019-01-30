@@ -105,6 +105,7 @@
             this.MinimumSize = new System.Drawing.Size(618, 423);
             this.Name = "AnalysisExcelForm";
             this.Text = "Анализ учебных планов";
+            this.Load += new System.EventHandler(this.AnalysisExcelForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
