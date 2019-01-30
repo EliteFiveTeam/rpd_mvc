@@ -12,7 +12,7 @@ namespace RPD.Controller
     public class MainController
     {
         IMainForm _view;
-        private List<EducationalProfile> _profiles;
+        private List<ProfileEducational> _profiles;
 
     public MainController(IMainForm view)
     {

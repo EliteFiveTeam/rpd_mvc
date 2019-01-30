@@ -6,3 +6,4 @@ C:\Users\M1KE\documents\visual studio 2010\Projects\RPD\RPD\bin\Debug\RPD.pdb
 C:\Users\M1KE\documents\visual studio 2010\Projects\RPD\RPD\obj\x86\Debug\RPD.exe
 C:\Users\M1KE\documents\visual studio 2010\Projects\RPD\RPD\obj\x86\Debug\RPD.pdb
 C:\Users\M1KE\documents\visual studio 2010\Projects\RPD\RPD\obj\x86\Debug\RPD.View.AnalysisExcelForm.resources
+C:\Users\M1KE\documents\visual studio 2010\Projects\RPD\RPD\obj\x86\Debug\RPD.csprojResolveAssemblyReference.cache

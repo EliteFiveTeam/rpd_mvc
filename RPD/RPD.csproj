@@ -46,17 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AnalysisExcelController.cs" />
     <Compile Include="Controller\MainController.cs" />
     <Compile Include="Data\DatabaseHelper.cs" />
     <Compile Include="Data\DataRepository.cs" />
+    <Compile Include="Data\Model\Competences.cs" />
     <Compile Include="Data\Model\Discipline.cs" />
-    <Compile Include="Data\Model\EducationalProfile.cs" />
+    <Compile Include="Data\Model\PlanEducational.cs" />
+    <Compile Include="Data\Model\ProfileEducational.cs" />
+    <Compile Include="Data\Model\Semester.cs" />
     <Compile Include="View\AnalysisExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\AnalysisExcelForm.Designer.cs">
       <DependentUpon>AnalysisExcelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\IAnalysisExcelForm.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
