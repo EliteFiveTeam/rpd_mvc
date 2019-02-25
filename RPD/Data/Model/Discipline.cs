@@ -29,7 +29,20 @@ namespace RPD.Data.Model
 
         public Discipline()
         {
-     
+            semesters = new Dictionary<int, Semester>
+            {
+                {1, new Semester()},
+                {2, new Semester()},
+                {3, new Semester()},
+                {4, new Semester()},
+                {5, new Semester()},
+                {6, new Semester()},
+                {7, new Semester()},
+                {8, new Semester()},
+                {9, new Semester()},
+                {10, new Semester()},
+            };
+            
         }
 
         public Discipline(String name)

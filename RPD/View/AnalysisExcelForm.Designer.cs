@@ -93,6 +93,7 @@
             this.buttonSelectExcel.TabIndex = 2;
             this.buttonSelectExcel.Text = "Выберите \"Учебный план\"";
             this.buttonSelectExcel.UseVisualStyleBackColor = false;
+            this.buttonSelectExcel.Click += new System.EventHandler(this.buttonSelectExcel_Click);
             // 
             // AnalysisExcelForm
             // 

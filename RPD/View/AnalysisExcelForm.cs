@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using RPD.Data.Model;
+using System.Threading;
 using RPD.Controller;
 
 namespace RPD.View
@@ -34,6 +35,34 @@ namespace RPD.View
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
         
+        }
+
+
+        public void ShowError(string message)
+        {
+            MessageBox.Show(message);
+        }
+
+        private void buttonSelectExcel_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileExcel = new OpenFileDialog();
+            openFileExcel.Filter = "Файлы Excel(*.xls;*.xlsm)|*.xls;*.xlsm";
+            if (openFileExcel.ShowDialog() == DialogResult.OK)
+                _controller.startAnalize(openFileExcel.FileName);
+            else
+                return;
+        }
+
+
+        public void ShowLogs(String text, Color color)
+        {
+            Action Logs = () => { rtbLogs.AppendText(text, color); }; Invoke(Logs);
+        }
+
+
+        public void ShowProgressBar(int Max, int Value)
+        {
+            Action Progress = () => { progressBar.Maximum = Max; progressBar.Value = Value; }; Invoke(Progress);
         }
     }
 }

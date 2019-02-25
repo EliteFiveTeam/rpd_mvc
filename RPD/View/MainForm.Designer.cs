@@ -159,6 +159,7 @@
             this.buttonPatternRP.TabIndex = 7;
             this.buttonPatternRP.Text = "Открыть";
             this.buttonPatternRP.UseVisualStyleBackColor = false;
+            this.buttonPatternRP.Click += new System.EventHandler(this.buttonPatternRP_Click);
             // 
             // buttonPatternFOS
             // 
@@ -249,6 +250,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.49881F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(860, 424);
             this.tableLayoutPanel1.TabIndex = 13;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel2
             // 

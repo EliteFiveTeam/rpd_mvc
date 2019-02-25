@@ -37,7 +37,6 @@ namespace RPD.Data
             {
                 list.Add(new ProfileEducational(reader["Название_профиля"].ToString(), reader["Год_профиля"].ToString()));
             }
-            reader.Close();
             return list;
         }
 
@@ -49,12 +48,10 @@ namespace RPD.Data
             {
                 id = Convert.ToInt32(reader["Код"]);
             }
-            reader.Close();
             reader = db.GetReader("SELECT Дисциплины_профиля.Дисциплины, Дисциплины_профиля.Код_профиля FROM Дисциплины_профиля WHERE (((Дисциплины_профиля.Код_профиля)=" + id + "));");
             while(reader.Read()){
                 list.Add(new Discipline(reader["Дисциплины"].ToString()));
             }
-            reader.Close();
             return list;
         }
 

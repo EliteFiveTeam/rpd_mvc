@@ -23,13 +23,18 @@ namespace RPD.Data
         {
             con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;" + @"Data Source=" + Application.StartupPath + "/baza_dan_proekt_kh.accdb");
             command.Connection = con;
-            con.Open();
+            
         }
 
 
         public OleDbDataReader GetReader(String commandText)
         {
             Connect();
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+            con.Open();
             command.CommandText = commandText;
             reader = command.ExecuteReader();
             return reader;

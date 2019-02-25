@@ -10,6 +10,7 @@ namespace RPD.View
     public partial class Form1 : Form, IMainForm
     {
         private MainController _controller;
+        private String pathFileWord = null;
 
 
         public Form1()
@@ -27,8 +28,10 @@ namespace RPD.View
         private void buttonAddProfile_Click(object sender, EventArgs e)
         {
             AnalysisExcelForm analysisExcelForm = new AnalysisExcelForm();
-            analysisExcelForm.Show();
+            analysisExcelForm.Owner = this;
+            analysisExcelForm.ShowDialog();
         }
+
 
         private void listBoxProfile_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -63,5 +66,25 @@ namespace RPD.View
                 listBoxDiscipline.Items.Add(discipline.Name);
             }
         }
+
+        private void buttonPatternRP_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileWord = new OpenFileDialog();
+            openFileWord.Filter = "Файлы Word(*.doc)|*.doc|Word(*.docx)|*.docx";
+            if (openFileWord.ShowDialog() == DialogResult.OK)
+            {
+                pathFileWord = openFileWord.FileName;
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }
