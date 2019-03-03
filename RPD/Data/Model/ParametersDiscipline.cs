@@ -14,9 +14,10 @@ namespace RPD.Data.Model
         public List<Themes> themes;
         public int CountThemes { get; set; }// ' Колво тем в дисциплине
         public int CountQuestForEx { get; set; }
+        public List<String> questionforexam;
         public ParametersDiscipline() 
         {
-            
+            questionforexam = new List<String>();
         }
     }
 }

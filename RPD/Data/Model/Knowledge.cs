@@ -7,11 +7,11 @@ namespace RPD.Data.Model
 {
     public class Knowledge
     {
-        public string Knowledge_before;// 'Знания до
-        public string Knowledge_after;// 'Знания после
-        public string Skills_before;// 'Умения до
-        public string Skills_after;//'Знания после
-        public string Own_before;// 'Знания до
-        public string Own_after;// 'Знания после
+        public string Knowledge_before{ get; set; }// 'Знания до
+        public string Knowledge_after{ get; set; }// 'Знания после
+        public string Skills_before { get; set; }// 'Умения до
+        public string Skills_after { get; set; }//'Знания после
+        public string Own_before { get; set; }// 'Знания до
+        public string Own_after { get; set; }// 'Знания после
     }
 }

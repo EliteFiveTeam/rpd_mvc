@@ -21,13 +21,19 @@ namespace RPD.View
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void buttonAddProfile_Click(object sender, EventArgs e)
         {
             AnalysisExcelForm analysisExcelForm = new AnalysisExcelForm();
             analysisExcelForm.Show();
+        }
+
+        private void buttonSelectDiscipline_Click(object sender, EventArgs e)
+        {
+            AnalysisWordForm analysisWordForm = new AnalysisWordForm();
+            analysisWordForm.Show();
         }
 
         private void listBoxProfile_SelectedIndexChanged(object sender, EventArgs e)
@@ -63,5 +69,13 @@ namespace RPD.View
                 listBoxDiscipline.Items.Add(discipline.Name);
             }
         }
+
+        private void buttonPatternRP_Click(object sender, EventArgs e)
+        {
+            AnalysisWordForm analysisWordForm = new AnalysisWordForm();
+            analysisWordForm.Show();
+        }
+
+        
     }
 }

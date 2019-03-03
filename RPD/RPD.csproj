@@ -57,9 +57,11 @@
     <Compile Include="Controller\MainController.cs" />
     <Compile Include="Data\DatabaseHelper.cs" />
     <Compile Include="Data\DataRepository.cs" />
+    <Compile Include="Color.cs" />
     <Compile Include="Data\Model\Competences.cs" />
     <Compile Include="Data\Model\Discipline.cs" />
     <Compile Include="Data\Model\Knowledge.cs" />
+    <Compile Include="Data\Model\Literature.cs" />
     <Compile Include="Data\Model\ParametersDiscipline.cs" />
     <Compile Include="Data\Model\Themes.cs" />
     <Compile Include="Data\Model\PlanEducational.cs" />

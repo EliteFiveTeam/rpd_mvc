@@ -47,6 +47,7 @@
             this.Create_Ticket = new System.Windows.Forms.Button();
             this.bt_create_newfos = new System.Windows.Forms.Button();
             this.Create_ANOT = new System.Windows.Forms.Button();
+            this.openFileWord = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.tab_Analysis_Pr.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -144,6 +145,7 @@
             this.rtb_LiteraBasic.Size = new System.Drawing.Size(900, 421);
             this.rtb_LiteraBasic.TabIndex = 21;
             this.rtb_LiteraBasic.Text = "";
+            this.rtb_LiteraBasic.TextChanged += new System.EventHandler(this.rtb_LiteraBasic_TextChanged);
             // 
             // tabPage4
             // 
@@ -221,6 +223,7 @@
             this.btn_Clear.TabIndex = 27;
             this.btn_Clear.Text = "Очистить";
             this.btn_Clear.UseVisualStyleBackColor = true;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // btn_OpenWp
             // 
@@ -241,6 +244,7 @@
             this.bt_create_newrp.TabIndex = 28;
             this.bt_create_newrp.Text = "Создать новую РП";
             this.bt_create_newrp.UseVisualStyleBackColor = true;
+            this.bt_create_newrp.Click += new System.EventHandler(this.bt_create_newrp_Click);
             // 
             // Create_Ticket
             // 
@@ -251,6 +255,7 @@
             this.Create_Ticket.TabIndex = 29;
             this.Create_Ticket.Text = "Создать билеты";
             this.Create_Ticket.UseVisualStyleBackColor = true;
+            this.Create_Ticket.Click += new System.EventHandler(this.Create_Ticket_Click);
             // 
             // bt_create_newfos
             // 
@@ -269,6 +274,10 @@
             this.Create_ANOT.TabIndex = 31;
             this.Create_ANOT.Text = "Создать новую Аннотацию";
             this.Create_ANOT.UseVisualStyleBackColor = true;
+            // 
+            // openFileWord
+            // 
+            this.openFileWord.FileName = "openFileWord";
             // 
             // AnalysisWordForm
             // 
@@ -315,5 +324,6 @@
         private System.Windows.Forms.Button Create_Ticket;
         private System.Windows.Forms.Button bt_create_newfos;
         private System.Windows.Forms.Button Create_ANOT;
+        private System.Windows.Forms.OpenFileDialog openFileWord;
     }
 }

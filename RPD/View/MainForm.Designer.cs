@@ -146,6 +146,7 @@
             this.buttonSelectDiscipline.TabIndex = 6;
             this.buttonSelectDiscipline.Text = "Выбрать дисциплину";
             this.buttonSelectDiscipline.UseVisualStyleBackColor = false;
+            this.buttonSelectDiscipline.Click += new System.EventHandler(this.buttonSelectDiscipline_Click);
             // 
             // buttonPatternRP
             // 
@@ -161,6 +162,7 @@
             this.buttonPatternRP.TabIndex = 7;
             this.buttonPatternRP.Text = "Открыть";
             this.buttonPatternRP.UseVisualStyleBackColor = false;
+            this.buttonPatternRP.Click += new System.EventHandler(this.buttonPatternRP_Click);
             // 
             // buttonPatternFOS
             // 
